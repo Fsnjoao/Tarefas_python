@@ -21,10 +21,15 @@ while True:
         if operador not in operador_aceito:
             print("Operador não aceito")
 
-
-
     sair = input ("deseja sair? ").lower().startswith("s")
     if sair is True:
         break
 
-
+        if operator == "+":
+            print(f"{numero1_float} + {numero2} = ", numero1_float + numero2_float)
+        elif operador == "-":
+            print(f"{numero1_float} - {numero2} = ", numero1_float - numero2_float)
+        elif operador == "*":
+             print(f"{numero1_float} * {numero2} = ", numero1_float * numero2_float)
+        else:
+            print("Error")
